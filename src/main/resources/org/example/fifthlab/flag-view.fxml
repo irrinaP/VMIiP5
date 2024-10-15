@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.fifthlab.TextFlag">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <VBox>
+        <Text text="Первая полоса"/>
+        <HBox spacing="10">
+            <RadioButton text="синий" onAction="#firstBlueAction" fx:id="firstBlue"/>
+            <RadioButton text="белый" onAction="#firstWhiteAction" fx:id="firstWhite"/>
+            <RadioButton text="зеленый" onAction="#firstGreenAction" fx:id="firstGreen"/>
+        </HBox>
+    </VBox>
+    <VBox>
+        <Text text="Вторая полоса"/>
+        <HBox spacing="10">
+            <RadioButton text="синий" onAction="#secondBlueAction" fx:id="secondBlue"/>
+            <RadioButton text="белый" onAction="#secondWhiteAction" fx:id="secondWhite"/>
+            <RadioButton text="зеленый" onAction="#secondGreenAction" fx:id="secondGreen"/>
+        </HBox >
+    </VBox>
+    <VBox>
+        <Text text="Третья полоса"/>
+        <HBox spacing="10">
+            <RadioButton text="синий" onAction="#thirdBlueAction" fx:id="thirdBlue"/>
+            <RadioButton text="белый" onAction="#thirdWhiteAction" fx:id="thirdWhite"/>
+            <RadioButton text="зеленый" onAction="#thirdGreenAction" fx:id="thirdGreen"/>
+        </HBox>
+    </VBox>
+    <Button text="Нарисовать" onAction="#paintButton"/>
+    <Text fx:id="resultText"/>
+</VBox>

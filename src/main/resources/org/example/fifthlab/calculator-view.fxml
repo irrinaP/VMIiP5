@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.fifthlab.Calculator">
+    <padding>
+        <Insets bottom="20.0" left="100.0" right="20.0" top="1.0"/>
+    </padding>
+
+    <Text fx:id="screen"/>
+    <HBox>
+        <Button onAction="#buttonOne" text="1"/>
+        <Button onAction="#buttonTwo" text="2"/>
+        <Button onAction="#buttonThree" text="3"/>
+    </HBox>
+    <HBox>
+        <Button onAction="#buttonFour" text="4"/>
+        <Button onAction="#buttonFive" text="5"/>
+        <Button onAction="#buttonSix" text="6"/>
+    </HBox>
+    <HBox>
+        <Button onAction="#buttonSeven" text="7"/>
+        <Button onAction="#buttonEight" text="8"/>
+        <Button onAction="#buttonNine" text="9"/>
+    </HBox>
+    <HBox>
+        <Button onAction="#buttonMinus" text="-"/>
+        <Button onAction="#buttonNull" text="0"/>
+        <Button onAction="#buttonDot" text="."/>
+    </HBox>
+    <HBox>
+        <Button onAction="#buttonPlus" text="+"/>
+        <Button onAction="#buttonMultiply" text="*"/>
+        <Button onAction="#buttonDel" text="/"/>
+    </HBox>
+    <HBox>
+        <Button text="Ok" onAction="#buttonOk"/>
+        <Button text="clear" onAction="#buttonClear"/>
+    </HBox>
+</VBox>

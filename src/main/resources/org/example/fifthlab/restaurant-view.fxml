@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="BASELINE_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.fifthlab.RestaurantOrder">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox>
+        <Text text="Картошечка" style="-fx-font-size: 20px"/>
+        <Text text="200"/>
+        <Spinner fx:id="potatoSpinner" BorderPane.alignment="CENTER" min="0" max="100"/>
+    </VBox>
+    <VBox>
+        <Text text="Котлетка" style="-fx-font-size: 20px"/>
+        <Text text="500"/>
+        <Spinner fx:id="cutletSpinner" BorderPane.alignment="CENTER" min="0" max="100"/>
+    </VBox>
+    <VBox>
+        <Text text="Сосисочка" style="-fx-font-size: 20px"/>
+        <Text text="300"/>
+        <Spinner fx:id="sausageSpinner" BorderPane.alignment="CENTER" min="0" max="100"/>
+    </VBox>
+    <VBox>
+        <Text text="Компотик" style="-fx-font-size: 20px"/>
+        <Text text="127"/>
+        <Spinner fx:id="compoteSpinner" BorderPane.alignment="CENTER" min="0" max="100"/>
+    </VBox>
+    <Button fx:id="checkButton" text="Оформить заказ" style="-fx-padding: 50px" onAction="#getCheck"/>
+</VBox>
